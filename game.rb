@@ -11,7 +11,7 @@ def is_int guess
   while true
 
     if guess=='quit'
-      break
+      exit
     elsif guess.to_i.to_s== guess
       break
     else
@@ -33,9 +33,6 @@ while true
     puts "Wow that's it!"
     puts"enter \'quit\' to quit, or guess again to keep playing"
     correct_number=rand(100)
-
-  elsif guess == 'quit'
-    break
 
   elsif guess.to_i > correct_number;
     puts "That is too high, guess again"
